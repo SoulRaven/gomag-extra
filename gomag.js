@@ -28,7 +28,7 @@ const cart_submenu_content = [
 
 VM.observe(document.body, () => {
 
-  let menu = $('#menu.nano-content li:nth-child(-n+3)'),
+  let menu = $('#menu.nano-content > li:nth-child(3)'),
       cart_submenu = $('<ul/>').addClass('submenu');
 
   $.each(cart_submenu_content, function (ndx, val) {
